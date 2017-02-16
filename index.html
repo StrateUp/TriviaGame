@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
+<html lang="en-us">
 <head>
-	<title></title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" src="assets/css/style.css">
+	<title>Trivia This</title>
 </head>
-<body>
+<body class= "container">
+	<div class="jumbotron">
+		<div class="startGame">
+			<header><h1>Trivia Game</h1></header>
+				<div>Are you ready for some trivia?</div>
+				<button>Click to Play<span id="launch-game"></span></button>
+		</div>
+	</div>
 
+	<form id="trivia questions">
+		<div>Seconds left:<span id="count-down"></span></div>
+		<ol>
+			<p>1.How many species of penguins are there?<br>
+				<input type="radio" name="species" value="17">17
+				<input type="radio" name="species" value="10">10
+				<input type="radio" name="species" value="45">45
+				<input type="radio" name="species" value="25">25
+			</p>
+			<p>2.How many pounds of fish can an Emperor penguin eat in a day?<br>
+				<input type="radio" name="diet" value="2"> 2 pounds
+				<input type="radio" name="diet" value="12"> 12 pounds
+				<input type="radio" name="diet" value="5"> 5 pounds
+				<input type="radio" name="diet" value="0.5"> 0.5 pounds
+			</p>
+			<p>3.Where will you NOT find penguins?<br>
+				<input type="radio" name="location" value="Antartica"> Antartica
+				<input type="radio" name="location" value="Alaska"> Alaska
+				<input type="radio" name="location" value="Africa"> Africa
+				<input type="radio" name="location" value="Argentina"> Argentina			
+			</p>
+			<p>4.Penguins stay warm while swimming because of:<br>
+				<input type="radio" name="warm" value="great circulation"> great circulation
+				<input type="radio" name="warm" value="blubber"> blubber
+				<input type="radio" name="warm" value="the-sun"> the sun
+				<input type="radio" name="warm" value="their-feathers"> their feathers			
+			</p>
+		</ol><br>
+		
+		<button>Done<span id="stopTimer"></span></button>		
+	</form>
+	
+
+<script type="text/javascript" src="assets/javascript/app2.js"></script>
 </body>
 </html>
